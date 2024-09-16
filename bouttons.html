@@ -4,7 +4,9 @@
     <style>
       .button {
         background-color: #04aa6d;
-        border: none;
+        border-width: 4px;
+        border-style: solid;
+        border-color: black;
         color: white;
         padding: 15px 32px;
         text-align: center;
@@ -12,9 +14,43 @@
         display: inline-block;
         margin: 4px 2px;
         cursor: pointer;
+        border-radius: 16px;
       }
 
       .button1 {
+        font-size: 10px;
+        background-color: #04aa6d;
+        border-color: red;
+      }
+
+      .button2 {
+        font-size: 12px;
+        background-color: #37765f;
+        border-color: blue;
+      }
+
+      .button3 {
+        font-size: 16px;
+        background-color: #0a3d2a;
+        border-color: violet;
+      }
+
+      .button4 {
+        font-size: 20px;
+        background-color: red;
+        border-color: pink;
+      }
+      .button5 {
+        font-size: 24px;
+        background-color: yellowgreen;
+        border-color: orange;
+      }
+      .button {
+        background-color: transparent;
+        color: gray;
+        &:hover {
+          border-color: yellow;
+        }
       }
     </style>
   </head>
@@ -27,10 +63,20 @@
       2. Modifiez la couleur de fond de chaque bouttons <br />
       3. Modifiez le border et border-radius de chaque boutton afin de faire des
       buttons arrondi. <br />
+
       4. Dupliquer le .container et ses enfants, et faire des bouttons avec un
       fond blanc et des bordure de couleurs. <br />
+
       5. Faites un état hover de chaque boutton
     </p>
+
+    <div class="container">
+      <button class="button button1">10px</button>
+      <button class="button button2">12px</button>
+      <button class="button button3">16px</button>
+      <button class="button button4">20px</button>
+      <button class="button button5">24px</button>
+    </div>
 
     <div class="container">
       <button class="button button1">10px</button>
